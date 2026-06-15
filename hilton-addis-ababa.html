@@ -491,36 +491,125 @@
 </section>
 
         <!-- POLICIES -->
-        <section class="section">
-            <div class="container">
-                <h2 class="section-title centered">Hotel Policies</h2>
-                <div class="gold-line" style="margin: 0 auto 32px"></div>
-                <div class="policies-tabs">
-                    <div class="ptab active">Fees &amp; Charges</div>
-                    <div class="ptab">Families &amp; Kids</div>
-                    <div class="ptab">Parking</div>
-                    <div class="ptab">Pets</div>
-                    <div class="ptab">Smoking</div>
-                    <div class="ptab">WiFi</div>
+        <section class="section policies-section">
+    <div class="container">
+        <h2 class="section-title centered">Hotel policies</h2>
+        <div class="gold-line" style="margin: 0 auto 32px"></div>
+
+        <div class="policies-wrap">
+
+            <input type="radio" name="policy" id="tab-fees" class="ptab-radio" checked>
+            <input type="radio" name="policy" id="tab-families" class="ptab-radio">
+            <input type="radio" name="policy" id="tab-parking" class="ptab-radio">
+            <input type="radio" name="policy" id="tab-pets" class="ptab-radio">
+            <input type="radio" name="policy" id="tab-smoking" class="ptab-radio">
+            <input type="radio" name="policy" id="tab-wifi" class="ptab-radio">
+
+            <div class="policies-tabs">
+
+                <label for="tab-fees" class="ptab">
+                    <div class="ptab-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="32" height="32">
+                            <circle cx="12" cy="12" r="9"/>
+                            <path d="M12 7v1m0 8v1M9.5 9.5a2.5 2.5 0 015 0c0 1.5-1 2-2.5 2.5S9 13.5 9 15h6"/>
+                        </svg>
+                    </div>
+                    <span>Fees and charges</span>
+                </label>
+
+                <label for="tab-families" class="ptab">
+                    <div class="ptab-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="32" height="32">
+                            <circle cx="9" cy="6" r="2"/>
+                            <circle cx="17" cy="6" r="2"/>
+                            <path d="M5 21v-4a4 4 0 014-4h6a4 4 0 014 4v4"/>
+                            <circle cx="13" cy="14" r="1.5"/>
+                        </svg>
+                    </div>
+                    <span>Families and kids</span>
+                </label>
+
+                <label for="tab-parking" class="ptab">
+                    <div class="ptab-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="32" height="32">
+                            <rect x="3" y="3" width="18" height="18" rx="2"/>
+                            <path d="M9 17V7h4a3 3 0 010 6H9"/>
+                        </svg>
+                    </div>
+                    <span>Parking</span>
+                </label>
+
+                <label for="tab-pets" class="ptab">
+                    <div class="ptab-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="32" height="32">
+                            <path d="M10 5.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM17 5.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 10a1.5 1.5 0 110 3 1.5 1.5 0 010-3zM17.5 10a1.5 1.5 0 110 3 1.5 1.5 0 010-3z"/>
+                            <path d="M12 13c-2 0-5 1.5-5 4.5V19h10v-1.5c0-3-3-4.5-5-4.5z"/>
+                        </svg>
+                    </div>
+                    <span>Pets</span>
+                </label>
+
+                <label for="tab-smoking" class="ptab">
+                    <div class="ptab-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="32" height="32">
+                            <line x1="3" y1="15" x2="18" y2="15"/>
+                            <line x1="3" y1="18" x2="18" y2="18"/>
+                            <path d="M18 15h1a2 2 0 002-2v-1"/>
+                            <path d="M18 8c0-2 2-2 2-4"/>
+                            <line x1="2" y1="2" x2="22" y2="22" stroke-width="1.5"/>
+                        </svg>
+                    </div>
+                    <span>Smoking</span>
+                </label>
+
+                <label for="tab-wifi" class="ptab">
+                    <div class="ptab-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="32" height="32">
+                            <path d="M1.5 8.5a15 15 0 0121 0"/>
+                            <path d="M5 12.5a10 10 0 0114 0"/>
+                            <path d="M8.5 16.5a5 5 0 017 0"/>
+                            <circle cx="12" cy="20" r="1" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    <span>WiFi</span>
+                </label>
+
+            </div>
+
+            <div class="policy-contents">
+                <div class="policy-content" id="content-fees">
+                    <p>A deposit is required upon check-in to cover any incidental charges.
+                       Prices include 20.88% service charge per stay, but exclude taxes
+                       and government charges.</p>
+                    <p>Check-in: 2:00 PM &nbsp;|&nbsp; Check-out: 12:00 PM</p>
                 </div>
-                <div class="policy-content">
-                    <p>
-                        This hotel offers a bespoke Family Experience for
-                        travellers below the age of 12. Enjoy your family meals
-                        by selecting dishes from the Kids Menu. The hotel offers
-                        kid's amenities.
-                    </p>
-                    <p>Check-in: 2pm &nbsp;|&nbsp; Check-out: 12pm</p>
-                    <p>
-                        Prices include 20.88% service charge per stay, but
-                        exclude taxes and government charges.
-                    </p>
+                <div class="policy-content" id="content-families">
+                    <p>This hotel offers a bespoke Family Experience for travellers below
+                       the age of 12. Enjoy your family meals by selecting dishes from
+                       the Kids Menu. The hotel offers kid's amenities.</p>
                 </div>
-                <div style="margin-top: 20px">
-                    <a href="#" class="btn-outline">All Policies</a>
+                <div class="policy-content" id="content-parking">
+                    <p>Complimentary self-parking is available on site for all hotel guests.</p>
+                </div>
+                <div class="policy-content" id="content-pets">
+                    <p>Pets are not allowed at this property.</p>
+                </div>
+                <div class="policy-content" id="content-smoking">
+                    <p>This is a non-smoking property. Smoking is permitted only in
+                       designated outdoor areas.</p>
+                </div>
+                <div class="policy-content" id="content-wifi">
+                    <p>Complimentary WiFi is available throughout the hotel for all guests.</p>
                 </div>
             </div>
-        </section>
+
+        </div>
+
+        <div style="text-align:center; margin-top: 28px">
+            <a href="#" class="btn-policies">All Policies</a>
+        </div>
+    </div>
+</section>
 
         <!-- DINING -->
         <section class="section" id="dining">

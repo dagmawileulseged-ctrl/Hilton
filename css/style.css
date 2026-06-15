@@ -647,31 +647,52 @@ nav.mainnav {
     opacity: 1;
 }
 /* ─── POLICIES ─── */
+.policies-section {
+    background: var(--white);
+}
+
+.ptab-radio {
+    display: none;
+}
+
 .policies-tabs {
     display: flex;
     border-bottom: 1px solid var(--stone);
-    gap: 0;
-    margin-bottom: 28px;
-    overflow-x: auto;
+    justify-content: space-between;
+    margin-bottom: 0;
 }
+
 .ptab {
-    padding: 12px 22px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    flex: 1;
+    padding: 16px 12px 14px;
     font-size: 13px;
-    font-weight: 500;
+    font-weight: 400;
     color: var(--mid);
-    border-bottom: 2px solid transparent;
+    border-bottom: 3px solid transparent;
     cursor: pointer;
-    white-space: nowrap;
+    text-align: center;
     transition: all 0.2s;
+    margin-bottom: -1px;
 }
-.ptab.active {
-    color: var(--navy);
-    border-bottom-color: var(--navy);
-}
+
 .ptab:hover {
     color: var(--navy);
 }
+
+.ptab-icon {
+    color: var(--navy);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Hide all content panels by default */
 .policy-content {
+    display: none;
     background: var(--off);
     border-radius: var(--radius);
     padding: 24px 28px;
@@ -679,8 +700,47 @@ nav.mainnav {
     color: var(--mid);
     line-height: 1.8;
 }
+
 .policy-content p + p {
     margin-top: 8px;
+}
+
+/* Show correct panel and highlight correct tab when radio is checked */
+#tab-fees:checked   ~ .policies-tabs label[for="tab-fees"],
+#tab-families:checked ~ .policies-tabs label[for="tab-families"],
+#tab-parking:checked  ~ .policies-tabs label[for="tab-parking"],
+#tab-pets:checked     ~ .policies-tabs label[for="tab-pets"],
+#tab-smoking:checked  ~ .policies-tabs label[for="tab-smoking"],
+#tab-wifi:checked     ~ .policies-tabs label[for="tab-wifi"] {
+    color: var(--navy);
+    font-weight: 700;
+    border-bottom-color: var(--navy);
+}
+
+#tab-fees:checked    ~ .policy-contents #content-fees,
+#tab-families:checked ~ .policy-contents #content-families,
+#tab-parking:checked  ~ .policy-contents #content-parking,
+#tab-pets:checked     ~ .policy-contents #content-pets,
+#tab-smoking:checked  ~ .policy-contents #content-smoking,
+#tab-wifi:checked     ~ .policy-contents #content-wifi {
+    display: block;
+}
+
+.btn-policies {
+    display: inline-block;
+    background: var(--navy);
+    color: var(--white);
+    padding: 10px 28px;
+    border-radius: var(--radius);
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    transition: background 0.2s;
+}
+
+.btn-policies:hover {
+    background: var(--gold);
 }
 
 /* ─── DINING ─── */
