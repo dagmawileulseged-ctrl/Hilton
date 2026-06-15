@@ -210,7 +210,6 @@ nav.mainnav {
     scroll-snap-type: x mandatory;
     anchor-name: --hero;
     height: auto;
-
 }
 
 .hero::-webkit-scrollbar {
@@ -254,10 +253,10 @@ nav.mainnav {
 }
 
 .hero-img {
-    flex: 0 0 55%;              
+    flex: 0 0 55%;
     height: auto;
     min-width: 220px;
-    scroll-snap-align: center;  
+    scroll-snap-align: center;
     background-size: 100% auto;
     background-position: center;
     background-repeat: no-repeat;
@@ -275,39 +274,46 @@ nav.mainnav {
     padding: 4px 8px;
 }
 
-
 /* ─── BOOKING BAR ─── */
 .booking-bar {
-    background: var(--navy);
+    background: #F0E9E6;
     padding: 14px 40px;
     display: flex;
     align-items: center;
+    justify-content: space-between;  /* spread groups across full width */
     gap: 12px;
     flex-wrap: wrap;
+    margin-top: 10px;
+    font-size: 13px;
+    color: #0A0A0A;
 }
+
 .booking-bar .field-group {
     display: flex;
     align-items: center;
-    gap: 8px;
-    background: rgba(255, 255, 255, 0.12);
-    border-radius: var(--radius);
-    padding: 8px 14px;
-    color: var(--white);
-    font-size: 13px;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    cursor: pointer;
-    transition: background 0.2s;
-    min-width: 140px;
+    gap: 6px;
 }
-.booking-bar .field-group:hover {
-    background: rgba(255, 255, 255, 0.2);
-}
+
 .booking-bar .field-label {
-    font-size: 10px;
-    opacity: 0.65;
-    display: block;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
+    font-weight: 700;  /* bold, like "Call", "Email", "Check-in" */
+}
+
+.booking-bar .field-val {
+    font-weight: 400;
+}
+
+.booking-bar .field-link {
+    color: #0A0A0A;
+    text-decoration: underline;
+}
+
+.booking-bar .separator {
+    color: #0A0A0A;
+    margin: 0 2px;
+}
+
+.booking-bar .arrow {
+    margin: 0 4px;
 }
 .booking-bar .field-val {
     font-weight: 600;
@@ -346,6 +352,11 @@ nav.mainnav {
     font-weight: normal;
     margin-bottom: 8px;
 }
+.O{
+  padding-left: 60px;
+    border-left: 2px solid #e5e5e5;
+}
+
 .section-sub {
     color: var(--mid);
     font-size: 14px;
@@ -356,6 +367,9 @@ nav.mainnav {
     height: 2px;
     background: var(--gold);
     margin-bottom: 28px;
+}
+.O2{
+  margin-left: 60px;
 }
 .centered {
     text-align: center;
@@ -371,6 +385,7 @@ nav.mainnav {
     gap: 60px;
     align-items: start;
 }
+
 .about-text p {
     color: var(--mid);
     line-height: 1.8;
@@ -379,8 +394,10 @@ nav.mainnav {
 }
 .amenities-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
     gap: 12px 24px;
+    border-left: 2px solid #e5e5e5;
+    padding-left: 60px;
 }
 .amenity-item {
     display: flex;
@@ -392,7 +409,7 @@ nav.mainnav {
     border-bottom: 1px solid var(--stone);
 }
 .amenity-icon {
-    color: var(--gold);
+    color: #007293;
     font-size: 16px;
     width: 20px;
     flex-shrink: 0;
@@ -402,6 +419,7 @@ nav.mainnav {
     border: 1.5px solid var(--navy);
     color: var(--navy);
     padding: 9px 22px;
+    margin-left: 60px;
     border-radius: var(--radius);
     font-size: 12.5px;
     font-weight: 600;
