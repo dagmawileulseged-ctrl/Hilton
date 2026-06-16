@@ -828,13 +828,12 @@ nav.mainnav {
 }
 /* ─── GROUP / EVENTS ─── */
 .events-banner {
-    background: linear-gradient(135deg, var(--navy) 0%, #003366 100%);
+    background: #002F61;
     color: var(--white);
-    padding: 56px 40px;
+    padding: 25px 40px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    gap: 40px;
+    gap: 100px;
     flex-wrap: wrap;
 }
 .events-banner-text h2 {
@@ -842,7 +841,14 @@ nav.mainnav {
     font-size: 28px;
     margin-bottom: 10px;
 }
-.events-banner-text p {
+.contain{
+    display: flex;
+    padding-left: 250px
+}
+.events-description{
+    padding-left: 90px;
+}
+.events-description p {
     opacity: 0.8;
     max-width: 520px;
     font-size: 14.5px;
@@ -857,14 +863,13 @@ nav.mainnav {
     font-weight: 700;
     letter-spacing: 0.06em;
     font-size: 13px;
-    text-transform: uppercase;
     flex-shrink: 0;
     transition:
         background 0.2s,
         color 0.2s;
 }
 .btn-white:hover {
-    background: var(--gold);
+    background-color:#F0E9E6 ;
     color: var(--white);
 }
 
