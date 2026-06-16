@@ -42,16 +42,15 @@ img {
 
 /* ─── TOPBAR ─── */
 .topbar {
-    background: var(--navy);
-    color: var(--white);
-    font-size: 12px;
+    background: var(--white);
+    color: var(--dark);
+    font-size: 16px;
     display: flex;
-    justify-content: flex-end;
-    align-items: center;
+    justify-content: right;
     gap: 20px;
-    padding: 6px 40px;
-    font-family: var(--sans);
-    letter-spacing: 0.04em;
+    padding-top: 25px;
+    padding-right: 200px;
+    font-weight: 1000;
 }
 .topbar a {
     opacity: 0.85;
@@ -73,129 +72,166 @@ img {
 /* ─── MAIN NAV ─── */
 nav.mainnav {
     background: var(--white);
-    border-bottom: 1px solid var(--stone);
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0 40px;
     position: sticky;
-    top: 0;
-    z-index: 100;
-    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.08);
+    /* top: 0;
+    z-index: 100; */
 }
-.nav-logo {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    padding: 14px 0;
-}
-.logo-mark {
-    width: 38px;
-    height: 38px;
-    background: var(--navy);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--white);
-    font-family: var(--serif);
-    font-size: 20px;
-    font-style: italic;
-    font-weight: bold;
-    flex-shrink: 0;
-}
-.logo-text {
-    font-family: var(--serif);
-    font-size: 22px;
-    color: var(--navy);
-    letter-spacing: 0.01em;
-}
+
+
 .nav-links {
     display: flex;
+    align-items:center;
+    justify-content: right;
+    padding-left: 180px;
     list-style: none;
-    gap: 4px;
 }
 .nav-links a {
     display: block;
     padding: 20px 12px;
-    font-size: 13px;
+    font-size: 19px;
+    font-weight: 800;
     color: var(--dark);
     letter-spacing: 0.04em;
-    font-weight: 500;
     border-bottom: 3px solid transparent;
     transition:
         border-color 0.2s,
         color 0.2s;
 }
-.nav-links a:hover,
-.nav-links a.active {
-    border-bottom-color: var(--gold);
-    color: var(--navy);
-}
-.nav-cta {
-    background: var(--navy);
-    color: var(--white) !important;
-    padding: 10px 22px !important;
-    border-radius: var(--radius);
-    border-bottom: none !important;
-    letter-spacing: 0.06em;
-    font-size: 12px !important;
-    font-weight: 600;
-}
-.nav-cta:hover {
-    background: var(--gold) !important;
+.nav-links li:not(:first-child) a:hover,
+.nav-links li:not(:first-child) a.active {
+    border-bottom: 5px solid #002147;
+    background-color: #D9E0E8;
 }
 
 /* ─── HOTEL SUBNAV ─── */
-.hotelsubnav {
-    background: var(--off);
+.booking-subnav {
+    background: var(--white);
     border-bottom: 1px solid var(--stone);
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 0 40px;
+    justify-content: center;
+    padding: 14px 40px;
+    flex-wrap: wrap;
+    gap: 420px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
-.hotelsubnav-left {
+
+.subnav-left {
     display: flex;
     flex-direction: column;
-    padding: 12px 0;
 }
+
 .hotel-name-sub {
-    font-size: 17px;
+    font-size: 18px;
     font-weight: 600;
     color: var(--navy);
     font-family: var(--serif);
 }
+
 .hotel-addr {
-    font-size: 12px;
+    font-size: 12.5px;
     color: var(--mid);
 }
+
 .hotel-addr a {
-    color: var(--gold);
+    color: var(--mid);
     text-decoration: underline;
 }
-.subnav-links {
+
+.subnav-right {
     display: flex;
-    list-style: none;
-    gap: 0;
+    align-items: center;
+    gap: 14px;
 }
-.subnav-links a {
-    display: block;
-    padding: 16px 14px;
-    font-size: 12.5px;
-    letter-spacing: 0.05em;
+
+.date-pick {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.date-day {
+    font-family: var(--serif);
+    font-size: 32px;
+    color: var(--navy);
+    line-height: 1;
+}
+
+.date-meta {
+    display: flex;
+    flex-direction: column;
+    font-size: 10.5px;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    color: var(--dark);
+    line-height: 1.3;
+}
+
+.date-divider {
+    width: 1px;
+    height: 32px;
+    background: var(--stone);
+}
+
+.pill-btn {
+    background: var(--white);
+    border: 1px solid var(--navy);
+    color: var(--navy);
+    padding: 9px 16px;
+    border-radius: var(--radius);
+    font-size: 13px;
     font-weight: 500;
-    color: var(--mid);
-    border-bottom: 2px solid transparent;
-    transition: all 0.2s;
+    cursor: pointer;
+    transition: background 0.2s;
 }
-.subnav-links a:hover {
-    color: var(--navy);
-    border-bottom-color: var(--navy);
+
+.pill-btn:hover {
+    color: var(--dark);
 }
-.subnav-links a.active {
-    color: var(--navy);
-    border-bottom-color: var(--navy);
+
+.btn-check {
+    background: var(--navy);
+    color: var(--white);
+    border: none;
+    padding: 11px 22px;
+    border-radius: var(--radius);
+    font-size: 13px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+
+.alert-banner {
+    background: #fdf3e3;
+    border-bottom: 1px solid var(--stone);
+    padding: 12px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 13.5px;
+}
+
+.alert-banner svg {
+    color: var(--gold);
+    flex-shrink: 0;
+}
+
+.alert-text {
+    font-weight: 700;
+    color: var(--dark);
+}
+
+.alert-link {
+    color: var(--dark);
+    text-decoration: underline;
 }
 
 /* ─── HERO GALLERY ─── */
@@ -280,8 +316,7 @@ nav.mainnav {
     padding: 14px 40px;
     display: flex;
     align-items: center;
-    justify-content: space-between;  /* spread groups across full width */
-    gap: 12px;
+    justify-content:space-around;  /* spread groups across full width */
     flex-wrap: wrap;
     margin-top: 10px;
     font-size: 13px;
@@ -296,6 +331,8 @@ nav.mainnav {
 
 .booking-bar .field-label {
     font-weight: 700;  /* bold, like "Call", "Email", "Check-in" */
+    font-size: 16px;
+    font-weight: 700;
 }
 
 .booking-bar .field-val {
@@ -305,6 +342,8 @@ nav.mainnav {
 .booking-bar .field-link {
     color: #0A0A0A;
     text-decoration: underline;
+    font-size: 16px;
+    font-weight: 700;
 }
 
 .booking-bar .separator {
@@ -346,11 +385,11 @@ nav.mainnav {
     padding: 64px 0;
 }
 .section-title {
-    font-family: var(--serif);
-    font-size: 28px;
+    font-size:35px;
     color: var(--navy);
-    font-weight: normal;
+    font-weight: 1000;
     margin-bottom: 8px;
+    
 }
 
 .about-right {
@@ -384,11 +423,13 @@ nav.mainnav {
     align-items: start;
 }
 
-.about-text p {
+.about-text {
     color: var(--mid);
     line-height: 1.8;
+    font-size: 18px;
+    font-weight: 1000;
     margin-bottom: 12px;
-    font-size: 14.5px;
+    line-height: 24px;
 }
 .amenities-grid {
     display: grid;
@@ -399,10 +440,10 @@ nav.mainnav {
     display: flex;
     align-items: center;
     gap: 10px;
-    font-size: 13.5px;
+    font-size: 18px;
+    font-weight: 200px;
     color: var(--dark);
-    padding: 6px 0;
-    border-bottom: 1px solid var(--stone);
+    padding: 0px 16px 0px 0px;
 }
 .amenity-icon {
     color: #007293;
@@ -446,6 +487,18 @@ nav.mainnav {
 
 /* ─── ROOMS ─── */
 /* ─── ROOMS ─── */
+.section-titles {
+    font-size: 32px;
+    color: var(--navy);
+    font-weight: 1000;
+    margin-bottom: 8px;   
+}
+.section-rooms {
+    color: var(--dark);
+    font-size: 16px;
+    margin-bottom: 36px;
+    font-weight: 1000;
+}
 .rooms-section {
     background: #f0ebe7;
 }
@@ -535,8 +588,9 @@ nav.mainnav {
 }
 
 .room-feat li {
-    padding: 3px 0;
     break-inside: avoid;
+    font-weight: 1000;
+    font-size: 14px;
 }
 
 .room-feat li strong {
@@ -546,7 +600,7 @@ nav.mainnav {
 /* CTA button — chunky, full width */
 .room-cta {
     display: block;
-    background: #1a2744;
+    background: #002F61;
     color: #ffffff;
     text-align: center;
     padding: 15px 12px;
@@ -562,13 +616,14 @@ nav.mainnav {
 }
 
 .room-cta:hover {
-    background: var(--gold);
+    background: var(--navy) ;
 }
 
 /* Disclaimer below button */
 .room-disclaimer {
-    font-size: 11px;
-    color: var(--mid);
+    font-size: 12px;
+    font-weight: 1000;
+    color: var(--dark);
     text-align: center;
     line-height: 1.6;
 }
@@ -582,8 +637,9 @@ nav.mainnav {
 .rooms-footer {
     text-align: center;
     margin-top: 32px;
-    font-size: 13.5px;
-    color: var(--mid);
+    font-size: 16px;
+    color: var(--dark);
+    font-weight: 800;
     line-height: 2;
 }
 
@@ -641,7 +697,8 @@ nav.mainnav {
 }
 
 .honors-pill-label {
-    font-size: 12.5px;
+    font-size: 19px;
+    font-weight: 1000;
     color: #ffffff;
     line-height: 1.5;
     opacity: 1;
@@ -669,9 +726,9 @@ nav.mainnav {
     gap: 10px;
     flex: 1;
     padding: 16px 12px 14px;
-    font-size: 13px;
-    font-weight: 400;
-    color: var(--mid);
+    font-size: 19px;
+    font-weight: 1000;
+    color: var(--dark);
     border-bottom: 3px solid transparent;
     cursor: pointer;
     text-align: center;
@@ -696,9 +753,14 @@ nav.mainnav {
     background: var(--off);
     border-radius: var(--radius);
     padding: 24px 28px;
-    font-size: 14px;
+    font-size: 15px;
+    font-weight: 400;
     color: var(--mid);
     line-height: 1.8;
+}
+.policy-content p{
+    font-weight: 1000;
+
 }
 
 .policy-content p + p {
@@ -761,10 +823,11 @@ nav.mainnav {
     object-fit: cover;
 }
 .dining-content p {
-    color: var(--mid);
-    font-size: 14.5px;
+    color: #0A0A0A;
+    font-size: 18px;
     line-height: 1.8;
     margin-bottom: 20px;
+    font-weight: 1000;
 }
 
 /* ─── FAMILY ─── */
@@ -792,14 +855,15 @@ nav.mainnav {
     order: 1;
 }
 .family-content p {
-    color: var(--mid);
-    font-size: 14.5px;
+    color: #0A0A0A ;
+    font-size: 18px;
     line-height: 1.8;
     margin-bottom: 20px;
+    font-weight: 1000;
 }
 .btn-blue {
     display: inline-block;
-    background: #0D2156 ;
+    background: #002F61 ;
     color: var(--white);
     padding: 10px 24px;
     border-radius: var(--radius);
@@ -817,7 +881,7 @@ nav.mainnav {
     border-bottom: 1.5px solid var(--navy);
     color: var(--navy);
     margin-left: 0 ;
-    font-size: 12.5px;
+    font-size: 15px;
     font-weight: 600;
     letter-spacing: 0.06em;
     margin-top: 20px;
@@ -847,17 +911,20 @@ nav.mainnav {
 }
 .events-description{
     padding-left: 90px;
+    font-size: 15px;
+    font-weight: 1000;
 }
 .events-description p {
     opacity: 0.8;
     max-width: 520px;
-    font-size: 14.5px;
+    font-size: 17px;
     line-height: 1.7;
 }
 .btn-white {
     display: inline-block;
-    background: var(--white);
-    color: var(--navy);
+    font-size: 16px;
+    background: #F0E9E6;
+    color: var(--dark);
     padding: 12px 28px;
     border-radius: var(--radius);
     font-weight: 700;
@@ -869,11 +936,19 @@ nav.mainnav {
         color 0.2s;
 }
 .btn-white:hover {
-    background-color:#F0E9E6 ;
-    color: var(--white);
+    background-color:white ;
+    color: var(--dark);
 }
 
 /* ─── LOCATION ─── */
+.section-subs {
+    color: var(--dark);
+    font-size: 14px;
+    margin-bottom: 36px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 1000;
+}
 .location-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -884,20 +959,22 @@ nav.mainnav {
     list-style: none;
 }
 .nearby-list li {
+    color: var(--dark);
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 12px 0;
     border-bottom: 1px solid var(--stone);
-    font-size: 14px;
+    font-size: 18px;
+    font-weight: 1000;
 }
 .nearby-list li:last-child {
     border-bottom: none;
 }
 .nearby-dist {
-    color: var(--gold);
-    font-weight: 600;
-    font-size: 13px;
+    color: var(--dark);
+    font-weight: 500;
+    font-size: 18px;
 }
 .map-placeholder {
     background: var(--stone);
@@ -919,15 +996,18 @@ nav.mainnav {
 }
 .ltab {
     padding: 8px 18px;
-    font-size: 13px;
+    font-size: 18px;
     font-weight: 500;
     border-bottom: 2px solid transparent;
     cursor: pointer;
-    color: var(--mid);
+    color: var(--dark);
+    font-weight: 1000;
 }
 .ltab.active {
-    color: var(--navy);
+    color: var(--dark);
     border-bottom-color: var(--navy);
+    font-weight: 1000;
+    font-size: 18px;
 }
 
 /* ─── BREADCRUMB ─── */
