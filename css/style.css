@@ -1089,7 +1089,7 @@ footer {
 }
 
 /* ─── MOBILE BREAKPOINT (Below 768px) ─── */
-@media (max-width: 767px) {
+@media (max-width: 768px) {
     .container {
         padding: 0 1rem;
     }
@@ -1142,21 +1142,32 @@ footer {
         gap: 1rem;
     }
     .subnav-left {
-        text-align: center;
+        display: none;
     }
     .subnav-right {
-        justify-content: center;
-        flex-direction: column;
-        align-items: stretch;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
         gap: 0.75rem;
+        width: 100%;
+        align-items: center;
     }
-    .date-pick {
-        justify-content: center;
+    .subnav-right .date-pick:first-of-type {
+        justify-self: end;
+    }
+    .subnav-right .date-pick:last-of-type {
+        justify-self: start;
     }
     .date-divider {
         display: none;
     }
-    .pill-btn, .btn-check {
+    .pill-btn {
+        grid-column: span 1;
+        width: 100%;
+        text-align: center;
+        padding: 0.75rem 1rem;
+    }
+    .btn-check {
+        grid-column: span 2;
         width: 100%;
         text-align: center;
         padding: 0.75rem 1rem;
