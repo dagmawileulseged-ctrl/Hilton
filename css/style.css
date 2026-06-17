@@ -235,7 +235,11 @@ nav.mainnav {
     text-decoration: underline;
 }
 /* Hero */
-
+.section-endless-entertainment-gallery{
+    
+        padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
 .media-gallery {
     display: flex;
     flex-direction: column;
@@ -246,6 +250,7 @@ nav.mainnav {
     text-align: center;
 }
 .media-gallery-item-container {
+    padding-top: 10px;
     width: 100%;
     display: flex;
     gap: 1.2rem;
@@ -259,7 +264,7 @@ nav.mainnav {
     -webkit-overflow-scrolling: touch;
 }
 .media-gallery-item {
-    flex: 0 0 70%;
+    /* flex: 0 0 70%; */
     scroll-snap-align: center;
     background: #ffffff;
     background-size: cover;
