@@ -120,6 +120,7 @@ nav.mainnav {
     position: sticky;
     top: 0;
     z-index: 100;
+    border-top: 1px solid var;
 }
 
 .subnav-left {
@@ -708,9 +709,9 @@ nav.mainnav {
     background: var(--white);
 }
 
-.ptab-radio {
+/* .ptab-radio {
     display: none;
-}
+} */
 
 .policies-tabs {
     display: flex;
@@ -735,10 +736,13 @@ nav.mainnav {
     transition: all 0.2s;
     margin-bottom: -1px;
 }
+.fee{
+    border-bottom: 4px solid var(--navy);
 
-.ptab:hover {
-    color: var(--navy);
 }
+/* .ptab:hover {
+    color: var(--navy);
+} */
 
 .ptab-icon {
     color: var(--navy);
@@ -769,6 +773,7 @@ nav.mainnav {
 .policy-content p + p {
     margin-top: 8px;
 }
+
 
 /* Show correct panel and highlight correct tab when radio is checked */
 /* #tab-fees:checked   ~ .policies-tabs label[for="tab-fees"],
