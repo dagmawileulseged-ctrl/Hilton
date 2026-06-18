@@ -49,11 +49,15 @@ img {
     display: flex;
     justify-content: flex-end;
     gap: 1.25rem;
-    padding-top: 1.5625rem; 
-    padding-right: clamp(1.25rem, 10vw, 12.5rem);  /*min-1.25rem    max 12.5 rem*/
+    padding-top: 1.5625rem;
+    padding-right: clamp(
+        1.25rem,
+        10vw,
+        12.5rem
+    ); /*min-1.25rem    max 12.5 rem*/
     font-weight: 1000;
 }
-.topbar ul{
+.topbar ul {
     display: flex;
     gap: 1.25rem;
 }
@@ -61,20 +65,20 @@ img {
     list-style: none;
     opacity: 0.85;
     transition: opacity 0.2s;
-    padding-bottom: 1.25rem; 
-    font-size: 1.1875rem; 
+    padding-bottom: 1.25rem;
+    font-size: 1.1875rem;
 }
 .topbar ul li:hover {
     opacity: 1;
-    border-bottom: 0.3125rem solid var(--navy); 
-    background-color: #D9E0E8;
+    border-bottom: 0.3125rem solid var(--navy);
+    background-color: #d9e0e8;
 }
 
 /* ─── MAIN NAV ─── */
 nav.mainnav {
     background: var(--white);
     display: flex;
-    padding: 0 2.5rem; 
+    padding: 0 2.5rem;
 }
 .nav-links {
     display: flex;
@@ -89,30 +93,30 @@ nav.mainnav {
 }
 .nav-links a {
     display: block;
-    padding: 1.25rem 0.75rem; 
-    font-size: 1.1875rem; 
+    padding: 1.25rem 0.75rem;
+    font-size: 1.1875rem;
     font-weight: 800;
     color: var(--dark);
     letter-spacing: 0.04em;
-    border-bottom: 0.1875rem solid transparent; 
+    border-bottom: 0.1875rem solid transparent;
     transition:
         border-color 0.2s,
         color 0.2s;
 }
 .nav-links li:not(:first-child) a:hover,
 .nav-links li:not(:first-child) a.active {
-    border-bottom: 0.3125rem solid var(--navy); 
-    background-color: #D9E0E8;
+    border-bottom: 0.3125rem solid var(--navy);
+    background-color: #d9e0e8;
 }
 
 /* ─── HOTEL SUBNAV ─── */
 .booking-subnav {
     background: var(--white);
-    border-bottom: 0.0625rem solid var(--stone); 
+    border-bottom: 0.0625rem solid var(--stone);
     display: flex;
     align-items: center;
     justify-content: space-around;
-    padding: 0.875rem 2.5rem; 
+    padding: 0.875rem 2.5rem;
     flex-wrap: wrap;
     position: sticky;
     top: 0;
@@ -124,7 +128,7 @@ nav.mainnav {
     flex-direction: column;
 }
 .hotel-name-sub {
-    font-size: 1.25rem; 
+    font-size: 1.25rem;
     font-weight: 600;
     color: var(--navy);
     font-family: var(--serif);
@@ -143,35 +147,35 @@ nav.mainnav {
 }
 .date-pick {
     display: flex;
-    gap: 0.25rem; 
+    gap: 0.25rem;
 }
 .date-day {
     font-family: var(--serif);
-    font-size: clamp(2rem, 3.5vw, 2.8125rem); 
+    font-size: clamp(2rem, 3.5vw, 2.8125rem);
     color: var(--navy);
     line-height: 1;
 }
 .date-meta {
     display: flex;
     flex-direction: column;
-    font-size: 1.0625rem; 
+    font-size: 1.0625rem;
     font-weight: 700;
     letter-spacing: 0.03em;
     color: var(--dark);
     line-height: 1.3;
 }
 .date-divider {
-    width: 0.0625rem; 
-    height: 2rem; 
+    width: 0.0625rem;
+    height: 2rem;
     background: var(--stone);
 }
 .pill-btn {
     background: var(--white);
-    border: 0.0625rem solid var(--navy); 
+    border: 0.0625rem solid var(--navy);
     color: var(--navy);
-    padding: 0.5625rem 1rem; 
+    padding: 0.5625rem 1rem;
     border-radius: var(--radius);
-    font-size: 1.0625rem; 
+    font-size: 1.0625rem;
     font-weight: 700;
     cursor: pointer;
     transition: background 0.2s;
@@ -183,9 +187,9 @@ nav.mainnav {
     background: var(--navy);
     color: var(--white);
     border: none;
-    padding: 0.6875rem 1.375rem; 
+    padding: 0.6875rem 1.375rem;
     border-radius: var(--radius);
-    font-size: 1.0625rem; 
+    font-size: 1.0625rem;
     font-weight: 700;
     cursor: pointer;
     transition: background 0.2s;
@@ -193,13 +197,13 @@ nav.mainnav {
 
 .alert-banner {
     background: #fdf3e3;
-    border-bottom: 0.0625rem solid var(--stone); 
-    padding: 0.75rem 2.5rem; 
+    border-bottom: 0.0625rem solid var(--stone);
+    padding: 0.75rem 2.5rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 0.625rem; 
-    font-size: 0.84375rem; 
+    gap: 0.625rem;
+    font-size: 0.84375rem;
     flex-wrap: wrap;
 }
 .alert-banner svg {
@@ -208,17 +212,17 @@ nav.mainnav {
 }
 .alert-text {
     font-weight: 700;
-    font-size: 1.1875rem; 
+    font-size: 1.1875rem;
     color: var(--dark);
 }
 .alert-link {
     color: var(--dark);
-    font-size: 0.9375rem; 
+    font-size: 0.9375rem;
     text-decoration: underline;
 }
 
 /* Hero */
-.section-endless-entertainment-gallery{
+.section-endless-entertainment-gallery {
     padding-top: 0 !important;
     padding-bottom: 0 !important;
 }
@@ -233,7 +237,7 @@ nav.mainnav {
     text-align: center;
 }
 .media-gallery-item-container {
-    padding-top: 0.625rem; 
+    padding-top: 0.625rem;
     width: 100%;
     display: flex;
     gap: 1.2rem;
@@ -261,74 +265,74 @@ nav.mainnav {
         filter 0.2s;
     will-change: transform;
     position: relative;
-    height: 41.75rem; 
-    width: 30rem; 
+    height: 41.75rem;
+    width: 30rem;
     flex-shrink: 0;
 }
 .tv-media-gallery .media-gallery-item {
-    flex: 0 0 30.1875rem; 
-    height: 25rem; 
-    width: 30.1875rem; 
-    border-radius: 0.3125rem; 
+    flex: 0 0 30.1875rem;
+    height: 25rem;
+    width: 30.1875rem;
+    border-radius: 0.3125rem;
 }
 
 /* ─── BOOKING BAR ─── */
 .booking-bar {
-    background: #F0E9E6;
-    padding: 0.875rem 2.5rem; 
+    background: #f0e9e6;
+    padding: 0.875rem 2.5rem;
     display: flex;
     align-items: center;
     justify-content: space-around;
     flex-wrap: wrap;
-    margin-top: 0.625rem; 
-    font-size: 0.8125rem; 
-    color: #0A0A0A;
+    margin-top: 0.625rem;
+    font-size: 0.8125rem;
+    color: #0a0a0a;
     gap: 1rem;
 }
 .booking-bar .field-group {
     display: flex;
     align-items: center;
-    gap: 0.375rem; 
+    gap: 0.375rem;
 }
 .booking-bar .field-label {
     font-weight: 700;
-    font-size: 1.1875rem; 
+    font-size: 1.1875rem;
 }
 .booking-bar .field-rate {
     font-weight: 400;
-    font-size: 1.125rem; 
+    font-size: 1.125rem;
 }
 .booking-bar .field-link {
-    color: #0A0A0A;
+    color: #0a0a0a;
     text-decoration: underline;
-    font-size: 1.1875rem; 
+    font-size: 1.1875rem;
     font-weight: 700;
 }
 .booking-bar .separator {
-    color: #0A0A0A;
-    margin: 0 0.125rem; 
+    color: #0a0a0a;
+    margin: 0 0.125rem;
 }
 
 /* ─── LAYOUT HELPERS ─── */
 .container {
-    max-width: 93.75rem; 
+    max-width: 93.75rem;
     margin: 0 auto;
-    padding: 0 2.5rem; 
+    padding: 0 2.5rem;
     width: 100%;
 }
 .section {
-    padding: 4rem 0; 
+    padding: 4rem 0;
 }
 .section-title {
-    font-size: clamp(1.75rem, 3.5vw, 2.1875rem); 
+    font-size: clamp(1.75rem, 3.5vw, 2.1875rem);
     color: var(--navy);
     font-weight: 1000;
-    margin-bottom: 0.5rem; 
+    margin-bottom: 0.5rem;
 }
 
 .about-right {
-    border-left: 0.125rem solid #e5e5e5; 
-    padding-left: 3.75rem; 
+    border-left: 0.125rem solid #e5e5e5;
+    padding-left: 3.75rem;
 }
 
 .gold-line {
@@ -401,7 +405,7 @@ nav.mainnav {
     font-size: clamp(1.5rem, 3vw, 2rem);
     color: var(--navy);
     font-weight: 1000;
-    margin-bottom: 0;   
+    margin-bottom: 0;
 }
 .rooms-section {
     background: #f0ebe7;
@@ -415,7 +419,7 @@ nav.mainnav {
     background: var(--white);
     border-radius: 0.375rem;
     overflow: hidden;
-    box-shadow: 0 0.0625rem 0.375rem rgba(0,0,0,0.08);
+    box-shadow: 0 0.0625rem 0.375rem rgba(0, 0, 0, 0.08);
     border: 0.03125rem solid #e8e2da;
     display: flex;
     flex-direction: column;
@@ -490,7 +494,7 @@ nav.mainnav {
 }
 .room-cta {
     display: block;
-    background: #002F61;
+    background: #002f61;
     color: #ffffff;
     text-align: center;
     padding: 0.9375rem 0.75rem;
@@ -568,12 +572,12 @@ nav.mainnav {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0 auto 1rem; 
-    width: 3rem; 
-    height: 3rem; 
+    margin: 0 auto 1rem;
+    width: 3rem;
+    height: 3rem;
 }
 .honors-pill-label {
-    font-size: 1.0625rem; 
+    font-size: 1.0625rem;
     font-weight: 1000;
     color: #ffffff;
     line-height: 1.5;
@@ -606,7 +610,7 @@ nav.mainnav {
     transition: all 0.2s;
     margin-bottom: -0.0625rem;
 }
-.fee{
+.fee {
     border-bottom: 0.25rem solid var(--navy);
 }
 .ptab-icon {
@@ -615,7 +619,7 @@ nav.mainnav {
     align-items: center;
     justify-content: center;
 }
-.ptab-icon:hover{
+.ptab-icon:hover {
     opacity: 5;
 }
 .policy-content {
@@ -628,7 +632,7 @@ nav.mainnav {
     color: var(--mid);
     line-height: 1.8;
 }
-.policy-content p{
+.policy-content p {
     font-weight: 1000;
 }
 #content-fees {
@@ -639,7 +643,7 @@ nav.mainnav {
 }
 .btn-policies {
     display: inline-block;
-    background: #002F61 ;
+    background: #002f61;
     color: var(--white);
     padding: 0.625rem 1.75rem;
     border-radius: var(--radius);
@@ -671,7 +675,7 @@ nav.mainnav {
     object-fit: cover;
 }
 .dining-content p {
-    color: #0A0A0A;
+    color: #0a0a0a;
     font-size: 1.125rem;
     line-height: 1.8;
     margin-bottom: 1.25rem;
@@ -703,7 +707,7 @@ nav.mainnav {
     order: 1;
 }
 .family-content p {
-    color: #0A0A0A ;
+    color: #0a0a0a;
     font-size: 1.125rem;
     line-height: 1.8;
     margin-bottom: 1.25rem;
@@ -711,7 +715,7 @@ nav.mainnav {
 }
 .btn-blue {
     display: inline-block;
-    background: #002F61 ;
+    background: #002f61;
     color: var(--white);
     padding: 0.625rem 1.5rem;
     border-radius: var(--radius);
@@ -724,11 +728,11 @@ nav.mainnav {
 .btn-blue:hover {
     background: var(--navy);
 }
-.btn-Terms{
+.btn-Terms {
     display: inline-block;
     border-bottom: 0.09375rem solid var(--navy);
     color: var(--navy);
-    margin-left: 0 ;
+    margin-left: 0;
     font-size: 0.9375rem;
     font-weight: 600;
     letter-spacing: 0.06em;
@@ -736,19 +740,19 @@ nav.mainnav {
     transition: all 0.2s;
 }
 .btn-Terms:hover {
-   cursor: pointer;
+    cursor: pointer;
 }
 
 /* ─── GROUP / EVENTS ─── */
 .events-banner {
-    background: #002F61;
+    background: #002f61;
     color: var(--white);
     padding: 3.75rem 2.5rem;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.contain{
+.contain {
     display: flex;
     align-items: center;
     width: 100%;
@@ -767,7 +771,7 @@ nav.mainnav {
     font-size: clamp(1.5rem, 3vw, 1.75rem);
     margin-bottom: 0.625rem;
 }
-.events-description{
+.events-description {
     flex: 1.5;
     min-width: 280px;
     font-size: 1.125rem;
@@ -787,7 +791,7 @@ nav.mainnav {
 }
 .btn-white {
     display: inline-block;
-    background: #F0E9E6;
+    background: #f0e9e6;
     color: var(--dark);
     padding: 0.375rem 0.75rem;
     border-radius: var(--radius);
@@ -799,7 +803,7 @@ nav.mainnav {
         color 0.2s;
 }
 .btn-white:hover {
-    background-color: white ;
+    background-color: white;
     color: var(--dark);
 }
 
@@ -901,7 +905,7 @@ footer {
     gap: 2.5rem;
     width: 100%;
 }
-.footer-both{
+.footer-both {
     display: flex;
     justify-content: space-between;
     gap: 5rem;
@@ -1188,7 +1192,7 @@ footer {
         border-radius: 0.5rem;
         border: none;
         overflow: hidden;
-        box-shadow: 0 0.25rem 0.5rem rgba(0,0,0,0.12);
+        box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.12);
         position: relative;
     }
     .rooms-grid .room-card .room-card-link-overlay {
@@ -1249,7 +1253,8 @@ footer {
     .policy-content {
         padding: 1rem;
     }
-    .dining-img, .family-img {
+    .dining-img,
+    .family-img {
         height: 12.5rem;
     }
     .contain {
