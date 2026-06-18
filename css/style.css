@@ -1299,3 +1299,41 @@ footer {
         text-align: center;
     }
 }
+
+/* ─── EXTRA MOBILE BREAKPOINT (Below 480px) ─── */
+@media (max-width: 480px) {
+    .subnav-right .pill-btn {
+        grid-column: span 2;
+    }
+    .booking-bar .field-label,
+    .booking-bar .field-link {
+        font-size: 1rem;
+    }
+    .booking-bar .field-link {
+        word-break: break-all;
+    }
+    .booking-bar .field-rate {
+        font-size: 0.95rem;
+    }
+    .amenities-grid {
+        grid-template-columns: 1fr;
+        gap: 0.75rem;
+    }
+    .address .container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.25rem 0.5rem;
+        font-size: 0.9rem;
+    }
+    .location-tabs {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .ltab {
+        font-size: 1rem;
+        padding: 0.5rem 0.75rem;
+    }
+    .ltab.active {
+        font-size: 1rem;
+    }
+}
