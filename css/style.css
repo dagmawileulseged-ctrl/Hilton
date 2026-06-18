@@ -1080,10 +1080,10 @@ footer {
         padding-bottom: 0.5rem;
         font-size: 1rem;
     }
-    .topbar .btn-join {
+    /* .topbar .btn-join {
         align-self: center;
         margin-top: 0;
-    }
+    } */
     nav.mainnav {
         flex-direction: column;
         padding: 1rem 1rem;
@@ -1133,7 +1133,7 @@ footer {
     }
     .pill-btn {
         grid-column: span 1;
-        width: 100%;
+        /* width: 100%; */
         text-align: center;
         padding: 0.75rem 1rem;
     }
@@ -1303,7 +1303,7 @@ footer {
 /* ─── EXTRA MOBILE BREAKPOINT (Below 480px) ─── */
 @media (max-width: 480px) {
     .subnav-right .pill-btn {
-        grid-column: span 2;
+        grid-column: span 1;
     }
     .booking-bar .field-label,
     .booking-bar .field-link {
